@@ -1,0 +1,7 @@
+Antrenorul Alex a fost adaugat!
+Abonatul Geo a fost adaugat!
+Abonatul Teo a fost adaugat!
+Persoana cu adresa de email a@x.gmail.com a intrat in sala!
+Persoana cu adresa de email b@x.gmail.com a intrat in sala!
+Sala este deja plina! Sunteti pus in coada de asteptare!
+Persoana cu adresa de email b@x.gmail.com este deja in sala!

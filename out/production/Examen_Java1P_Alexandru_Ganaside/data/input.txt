@@ -1,0 +1,7 @@
+SIGNUP_ANTRENOR a@x.gmail.com Alex 2 12345678 12345678
+SIGNUP_ABONAT b@x.gmail.com Geo 2 12345678 12345678
+SIGNUP_ABONAT c@x.gmail.com Teo 2 12345678 12345678
+INTRA_IN_SALA a@x.gmail.com
+INTRA_IN_SALA b@x.gmail.com
+INTRA_IN_SALA c@x.gmail.com
+INTRA_IN_SALA b@x.gmail.com

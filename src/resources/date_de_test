@@ -1,0 +1,249 @@
+Metode: SIGNUP_ABONAT / SIGNUP_ANTRENOR
+
+Set 1:
+SIGNUP_ANTRENOR a@a.gmail.com Alex 2 12345678 12345678
+SIGNUP_ANTRENOR a@b.gmail.com Bogdan 2 12345678 12345678
+SIGNUP_ABONAT a@c.gmail.com Cristi 2 12345678 12345678
+SIGNUP_ABONAT a@d.gmail.com Daniel 2 12345678 12345678
+SIGNUP_ANTRENOR a@c.gmail.com Elena 2 12345678 12345678
+SIGNUP_ABONAT a@b.gmail.com Flavius 2 12345678 12345678
+
+Set 2:
+SIGNUP_ANTRENOR @a.gmail.com Alex 2 12345678 12345678
+SIGNUP_ANTRENOR a@a.gmail.com Alex 2 12345678 1234567
+SIGNUP_ANTRENOR a@a.gmail.com Alex 2 1234567 1234567
+SIGNUP_ABONAT @a.gmail.com Alex 2 12345678 12345678
+SIGNUP_ABONAT a@a.gmail.com Alex 2 12345678 1234567
+SIGNUP_ABONAT a@a.gmail.com Alex 2 1234567 1234567
+
+-------------------------------------------------------------------
+
+Metode: LOGIN_ABONAT / LOGIN_ANTRENOR
+
+SIGNUP_ABONAT b@x.gmail.com Teo 2 12345678 12345678
+SIGNUP_ANTRENOR a@a.gmail.com Alex 2 12345678 12345678
+LOGIN_ANTRENOR a@a.gmail.com 12345678
+SIGNUP_ANTRENOR a@b.gmail.com Bogdan 2 12345678 12345678
+LOGIN_ANTRENOR b@x.gmail.com 12345678
+LOGIN_ANTRENOR a@a.gmail.com 12345678
+LOGIN_ANTRENOR a@a.gmail.com 123456789
+LOGIN_ANTRENOR x@a.gmail.com 12345678
+
+-------------------------------------------------------------------
+
+Metode: LOGOUT_ABONAT / LOGOUT_ANTRENOR
+
+Set 1:
+SIGNUP_ABONAT b@x.gmail.com Bogdan 2 12345678 12345678
+LOGIN_ABONAT b@x.gmail.com 12345678
+SIGNUP_ABONAT c@x.gmail.com Claudiu 2 12345678 12345678
+LOGIN_ABONAT c@x.gmail.com 12345678
+LOGOUT_ABONAT c@x.gmail.com 12345678
+LOGOUT_ABONAT b@x.gmail.com 12345678
+
+Set 2:
+SIGNUP_ANTRENOR b@x.gmail.com Bogdan 2 12345678 12345678
+LOGIN_ANTRENOR b@x.gmail.com 12345678
+SIGNUP_ANTRENOR c@x.gmail.com Claudiu 2 12345678 12345678
+LOGIN_ANTRENOR c@x.gmail.com 12345678
+LOGOUT_ANTRENOR c@x.gmail.com 12345678
+LOGOUT_ANTRENOR b@x.gmail.com 12345678
+
+-------------------------------------------------------------------
+
+Metode: INCREMENT_PROGRES / DECREMENT_PROGRES
+
+Set 1:
+SIGNUP_ABONAT b@x.gmail.com Teo 2 12345678 12345678
+LOGIN_ABONAT b@x.gmail.com 12345678
+INCREMENT_PROGRES 8
+INCREMENT_PROGRES 1
+DECREMENT_PROGRES 10
+DECREMENT_PROGRES 1
+
+Set 2:
+SIGNUP_ANTRENOR b@x.gmail.com Teo 2 12345678 12345678
+LOGIN_ANTRENOR b@x.gmail.com 12345678
+INCREMENT_PROGRES 8
+INCREMENT_PROGRES 1
+DECREMENT_PROGRES 10
+DECREMENT_PROGRES 1
+
+-------------------------------------------------------------------
+
+Metoda: ADAUGA_ANTRENOR
+
+Set 1:
+SIGNUP_ABONAT a@x.gmail.com Teo 2 12345678 12345678
+LOGIN_ABONAT a@x.gmail.com 12345678
+ADAUGA_ANTRENOR b@x.gmail.com
+ADAUGA_ANTRENOR a@x.gmail.com
+SIGNUP_ANTRENOR b@x.gmail.com Teo 2 12345678 12345678
+ADAUGA_ANTRENOR b@x.gmail.com
+
+Set 2:
+SIGNUP_ABONAT a@x.gmail.com Teo 2 12345678 12345678
+LOGIN_ABONAT a@x.gmail.com 12345678
+ADAUGA_ANTRENOR b@x.gmail.com
+ADAUGA_ANTRENOR a@x.gmail.com
+SIGNUP_ANTRENOR b@x.gmail.com Teo 0 12345678 12345678
+ADAUGA_ANTRENOR b@x.gmail.com
+
+Set 3:
+SIGNUP_ANTRENOR a@x.gmail.com Alex 1 12345678 12345678
+SIGNUP_ANTRENOR b@x.gmail.com Bogdan 1 12345678 12345678
+SIGNUP_ABONAT c@x.gmail.com Cristi 1 12345678 12345678
+SIGNUP_ABONAT d@x.gmail.com Daniel 1 12345678 12345678
+LOGIN_ABONAT c@x.gmail.com 12345678
+ADAUGA_ANTRENOR a@x.gmail.com
+ADAUGA_ANTRENOR b@x.gmail.com
+ADAUGA_ANTRENOR a@x.gmail.com
+LOGOUT_ABONAT c@x.gmail.com
+LOGIN_ABONAT d@x.gmail.com 12345678
+ADAUGA_ANTRENOR a@x.gmail.com
+
+-------------------------------------------------------------------
+
+Metoda:VIZUALIZARE_ABONATII_MEI
+
+SIGNUP_ANTRENOR a@x.gmail.com Alex 2 12345678 12345678
+SIGNUP_ABONAT b@x.gmail.com Geo 2 12345678 12345678
+LOGIN_ABONAT b@x.gmail.com 12345678
+ADAUGA_ANTRENOR a@x.gmail.com
+LOGOUT_ABONAT b@x.gmail.com
+SIGNUP_ABONAT c@x.gmail.com Geo 2 12345678 12345678
+LOGIN_ABONAT c@x.gmail.com 12345678
+ADAUGA_ANTRENOR a@x.gmail.com
+LOGOUT_ABONAT c@x.gmail.com
+LOGIN_ANTRENOR a@x.gmail.com 12345678
+VIZUALIZARE_ABONATII_MEI
+
+-------------------------------------------------------------------
+
+Metode: SUBSCRIBE_ABONAT / SUBSCRIBE_ANTRENOR
+
+Set 1:
+SIGNUP_ABONAT b@x.gmail.com Geo 2 12345678 12345678
+SUBSCRIBE_ABONAT
+LOGIN_ABONAT b@x.gmail.com 12345678
+SUBSCRIBE_ABONAT
+SUBSCRIBE_ABONAT
+
+Set 2:
+SIGNUP_ANTRENOR a@x.gmail.com Alex 2 12345678 12345678
+SUBSCRIBE_ANTRENOR
+LOGIN_ANTRENOR a@x.gmail.com 12345678
+SUBSCRIBE_ANTRENOR
+SUBSCRIBE_ANTRENOR
+
+-------------------------------------------------------------------
+
+Metoda: ADAUGA_NEWS
+
+SIGNUP_ANTRENOR a@x.gmail.com Alex 2 12345678 12345678
+SIGNUP_ABONAT b@x.gmail.com Geo 2 12345678 12345678
+SIGNUP_ABONAT c@x.gmail.com Teo 2 12345678 12345678
+LOGIN_ANTRENOR a@x.gmail.com 12345678
+SUBSCRIBE_ANTRENOR
+LOGOUT_ANTRENOR a@x.gmail.com
+LOGIN_ABONAT b@x.gmail.com 12345678
+SUBSCRIBE_ABONAT
+LOGOUT_ABONAT b@x.gmail.com
+LOGIN_ABONAT c@x.gmail.com 12345678
+SUBSCRIBE_ABONAT
+LOGOUT_ABONAT c@x.gmail.com
+ADAUGA_NEWS Hello to Java 1P course!
+
+-------------------------------------------------------------------
+
+Metoda: INTRA_IN_SALA (a se testa si cu MAX_PERSOANE_IN_SALA = 2)
+
+SIGNUP_ANTRENOR a@x.gmail.com Alex 2 12345678 12345678
+SIGNUP_ABONAT b@x.gmail.com Geo 2 12345678 12345678
+SIGNUP_ABONAT c@x.gmail.com Teo 2 12345678 12345678
+INTRA_IN_SALA a@x.gmail.com
+INTRA_IN_SALA b@x.gmail.com
+INTRA_IN_SALA c@x.gmail.com
+INTRA_IN_SALA b@x.gmail.com
+
+-------------------------------------------------------------------
+
+Metoda: IESE_DIN_SALA (a se testa si cu MAX_PERSOANE_IN_SALA = 2)
+
+SIGNUP_ANTRENOR a@x.gmail.com Alex 2 12345678 12345678
+SIGNUP_ABONAT b@x.gmail.com Geo 2 12345678 12345678
+SIGNUP_ABONAT c@x.gmail.com Teo 2 12345678 12345678
+INTRA_IN_SALA a@x.gmail.com
+INTRA_IN_SALA b@x.gmail.com
+INTRA_IN_SALA c@x.gmail.com
+INTRA_IN_SALA b@x.gmail.com
+IESE_DIN_SALA b@x.gmail.com
+INTRA_IN_SALA c@x.gmail.com
+
+-------------------------------------------------------------------
+
+Metoda: VIZUALIZARE_PERSOANE_CU_ANTRENOR
+
+SIGNUP_ANTRENOR a@x.gmail.com Alex 2 12345678 12345678
+SIGNUP_ANTRENOR b@x.gmail.com Bogdan 1 12345678 12345678
+SIGNUP_ABONAT c@x.gmail.com Cristi 1 12345678 12345678
+SIGNUP_ABONAT d@x.gmail.com Daniel 1 12345678 12345678
+LOGIN_ABONAT c@x.gmail.com 12345678
+ADAUGA_ANTRENOR a@x.gmail.com
+ADAUGA_ANTRENOR b@x.gmail.com
+ADAUGA_ANTRENOR a@x.gmail.com
+LOGOUT_ABONAT c@x.gmail.com
+LOGIN_ABONAT d@x.gmail.com 12345678
+ADAUGA_ANTRENOR b@x.gmail.com
+VIZUALIZARE_PERSOANE_CU_ANTRENOR
+
+-------------------------------------------------------------------
+
+Metoda: VIZUALIZARE_ABONATI (sortati descrescator dupa progres, iar la progres egal sortati alfabetic dupa nume)
+
+SIGNUP_ABONAT a@a.gmail.com Alex 2 12345678 12345678
+SIGNUP_ABONAT a@b.gmail.com Bogdan 8 12345678 12345678
+SIGNUP_ABONAT a@c.gmail.com Cristi 6 12345678 12345678
+SIGNUP_ABONAT a@d.gmail.com Darius 6 12345678 12345678
+SIGNUP_ABONAT a@e.gmail.com Elena 9 12345678 12345678
+SIGNUP_ANTRENOR a@f.gmail.com Florin 9 12345678 12345678
+VIZUALIZARE_ABONATI
+
+-------------------------------------------------------------------
+
+Metoda: VIZUALIZARE_ANTRENORI (sortati crescator dupa nrAbonati, iar la nrAbonati egal sortati alfabetic dupa nume)
+
+SIGNUP_ANTRENOR a@a.gmail.com Alex 2 12345678 12345678
+SIGNUP_ANTRENOR a@b.gmail.com Bogdan 8 12345678 12345678
+SIGNUP_ANTRENOR a@c.gmail.com Cristi 6 12345678 12345678
+SIGNUP_ANTRENOR a@d.gmail.com Darius 6 12345678 12345678
+SIGNUP_ANTRENOR a@e.gmail.com Elena 9 12345678 12345678
+SIGNUP_ABONAT a@f.gmail.com Florin 9 12345678 12345678
+VIZUALIZARE_ANTRENORI
+
+-------------------------------------------------------------------
+
+Metode: PERSITA_ABONATI / PERSISTA_ANTRENORI
+
+SIGNUP_ABONAT a@x.gmail.com Alex 3 12345678 12345678
+SIGNUP_ABONAT b@x.gmail.com Bogdan 8 123456789 123456789
+PERSISTA_ABONATI
+SIGNUP_ABONAT c@x.gmail.com Cristi 4 123456789 123456789
+PERSISTA_ABONATI
+SIGNUP_ABONAT d@x.gmail.com Daniel 5 123456789 123456789
+PERSISTA_ABONATI
+SIGNUP_ABONAT e@x.gmail.com Eduard 8 123456789 123456789
+PERSISTA_ABONATI
+SIGNUP_ABONAT f@x.gmail.com Florin 2 123456789 123456789
+PERSISTA_ABONATI
+SIGNUP_ANTRENOR g@x.gmail.com George 3 12345678 12345678
+SIGNUP_ANTRENOR h@x.gmail.com Horia 8 123456789 123456789
+PERSISTA_ANTRENORI
+SIGNUP_ANTRENOR i@x.gmail.com Ionut 4 123456789 123456789
+PERSISTA_ANTRENORI
+SIGNUP_ANTRENOR j@x.gmail.com John 5 123456789 123456789
+PERSISTA_ANTRENORI
+SIGNUP_ANTRENOR k@x.gmail.com Katie 8 123456789 123456789
+PERSISTA_ANTRENORI
+SIGNUP_ANTRENOR l@x.gmail.com Laura 2 123456789 123456789
+PERSISTA_ANTRENORI
